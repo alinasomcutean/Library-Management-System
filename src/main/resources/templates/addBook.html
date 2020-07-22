@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Add book</title>
+    <link rel="stylesheet" type="text/css" href="addNewBook.css">
+</head>
+<body>
+    <div id="container">
+        <form action="addBook" method="post">
+            <label for="title">Title(*) :</label>
+            <input type="text" id="title" placeholder="title" name="title">
+
+            <label for="author">Author(*) :</label>
+            <input type="text" id="author" placeholder="author" name="author">
+
+            <label for="subject1">Subject 1(*) :</label>
+            <input type="text" id="subject1" placeholder="subject 1" name="subject1">
+            <label for="subject2">Subject 2(*) :</label>
+            <input type="text" id="subject2" placeholder="subject 2" name="subject2">
+            <label for="subject3">Subject 3(*) :</label>
+            <input type="text" id="subject3" placeholder="subject 3" name="subject3">
+            <label for="subject4">Subject 4(*) :</label>
+            <input type="text" id="subject4" placeholder="subject 4" name="subject4">
+            <label for="subject5">Subject 5(*) :</label>
+            <input type="text" id="subject5" placeholder="subject 5" name="subject5">
+
+            <label for="description">Description(*) :</label>
+            <input type="text" id="description" placeholder="description" name="description">
+
+            <label for="copies">Number of copies(*) :</label>
+            <input type="text" id="copies" placeholder="no of copies " name="copies">
+
+            <button class="add">Add book</button>
+        </form>
+    </div>
+
+    <div id="bookItem">
+        <form action="/addBookItem" method="post">
+            <label for="status">Status(*) :</label>
+            <input type="text" id="status" placeholder="status" name="status">
+
+            <label for="edition">Edition(*) :</label>
+            <input type="text" id="edition" placeholder="edition" name="edition">
+
+            <label for="pages">Number of pages(*) :</label>
+            <input type="text" id="pages" placeholder="no of pages" name="pages">
+
+            <label for="inventory">Inventory number(*) :</label>
+            <input type="text" id="inventory" placeholder="inventory number" name="inventory">
+
+            <label for="price">Price(*) :</label>
+            <input type="text" id="price" placeholder="price" name="price">
+
+            <button type="submit">Add book item</button>
+        </form>
+    </div>
+
+    <h1>Add a new book to the library</h1>
+    <h2>Plese complete all the fields marked with * to add a new book to the library</h2>
+    <h3 th:text="${exists}"></h3>
+</body>
+</html>

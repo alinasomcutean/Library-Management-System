@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<div id="container">
+    <form action="login" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="username" name="username">
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="password" name="password">
+
+        <button class="login">Log in</button>
+    </form>
+
+    <form action="register">
+        <button class="login signup">Sign up</button>
+    </form>
+</div>
+
+
+<h1><br>Library Management System</h1>
+<h2 th:text="${wrongData}"></h2>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+body{
+    background-image: url("admin.jpg");
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #333;
+}
+
+h1{
+    text-align: center;
+    color: 	#333;
+    font-size: 26px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    position: absolute;
+    top: 2%;
+    left: 30%;
+}
+
+h2{
+    color: 	#333;
+    font-size: 17px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#container {
+}
+
+label {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 16px;
+    font-weight: bold
+    color: #333;
+    height: 15px;
+    width: 100px;
+}
+
+input[type=text] {
+    width: 200px;
+    height: 25px;
+}
+
+table {
+    width:85%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.buttons {
+     font-size: 16px;
+     top: 63%;
+     left: 40%;
+     border-radius: 15px;
+     border: 2px solid #87CEFA;
+     box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}

@@ -1,0 +1,134 @@
+ body{
+     background-image: url("user.jpg");
+ }
+
+ html, body {
+     width: 100%;
+     height: 100%;
+     font-family: "Helvetica Neue", Helvetica, sans-serif;
+     color: #FFDAB9;
+ }
+
+ h1{
+     text-align: center;
+     color: 	#FFDAB9;
+     font-size: 44px;
+     font-family: "Franklin Gothic Medium", Helvetica, sans-serif;
+     position: absolute;
+     top: 2%;
+     left: 37%;
+ }
+
+ h2{
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 20px;
+     font-weight: bold
+     color: #333;
+     position: absolute;
+     top: 20%;
+     left: 5%;
+ }
+
+ h3{
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 20px;
+     font-weight: bold
+     color: #333;
+     position: absolute;
+     top: 15%;
+     left: 38%;
+ }
+
+ .account {
+     position: fixed;
+     font-size: 18px;
+     background: #FFDAB9;
+     top: 0px;
+     right: 0px;
+ }
+
+ #container {
+     position: absolute;
+     width: 600px;
+     height: 600px;
+     top: 55%;
+     left: 25%;
+     margin-top: -140px;
+     margin-left: -170px;
+ }
+
+ label {
+     font-family: Georgia, "Times New Roman", Times, serif;
+     font-size: 20px;
+     font-weight: bold
+     color: #333;
+     height: 20px;
+     width: 200px;
+     margin-top: 10px;
+     margin-left: 10px;
+     text-align: left;
+     clear: both;
+     float:left;
+     margin-right:15px;
+ }
+
+ input[type=text] {
+     width: 290px;
+     height: 35px;
+     border: 1px solid #000;
+     margin-top: 10px;
+     float: left;
+ }
+
+ .search {
+     position: absolute;
+     font-size: 22px;
+     width: 150px;
+     height: 35px;
+     top: 10%;
+     left: 100%;
+     border-radius: 15px;
+     border: 2px solid #FA8072;
+     box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+ }
+
+ .viewAll {
+     position: absolute;
+     font-size: 22px;
+     width: 180px;
+     height: 35px;
+     top: 43%;
+     left: 70%;
+     border-radius: 15px;
+     border: 2px solid #FA8072;
+     box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+ }
+
+ table {
+     width:90%;
+     margin-top: 480px;
+ }
+
+ table, th, td {
+     border: 1px solid black;
+     border-collapse: collapse;
+ }
+
+ th, td {
+     padding: 8px;
+ }
+
+ tr {
+     background-color: #FFDAB9;
+     color: #333;
+ }
+
+
+ .buttons {
+      font-size: 18px;
+      top: 63%;
+      left: 40%;
+      border-radius: 15px;
+      border: 2px solid #FA8072;
+      box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+ }

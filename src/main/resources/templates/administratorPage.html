@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <link rel="stylesheet" type="text/css" href="/administratorPage.css">
+
+</head>
+<body>
+
+    <form action="adminAccount">
+        <button class="account">My account</button>
+    </form>
+
+    <div id="container">
+        <form action="search">
+            <label for="title">Title of the book:</label>
+            <input type="text" id="title" placeholder="Book's title" name="title">
+
+            <label for="author">Author of the book:</label>
+            <input type="text" id="author" placeholder="Author's title" name="author">
+
+            <label for="subject">Subject of the book:</label>
+            <input type="text" id="subject" placeholder="Subject's title" name="subject">
+
+            <button class="search">Search book</button>
+        </form>
+    </div>
+
+    <form action="add">
+        <button class="add">Add book</button>
+    </form>
+
+    <form action="viewAll">
+        <button class="viewAll">View all books</button>
+    </form>
+
+    <h1>Administrator page</h1>
+    <h2><br>Search for a book:</h2>
+
+        <table align="center">
+            <col width="160">
+            <col width="160">
+            <col width="160">
+            <col width="300">
+            <col width="30">
+            <col width="30">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Subject</th>
+                    <th>Description</th>
+                    <th>No copies</th>
+                    <th>Update/Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <form th:action="${'viewAll'}" method="post">
+                <tr th:each="book : ${allBooks}">
+                    <td th:text="${book.title}"></td>
+                    <td th:text="${book.author.getName()}"></td>
+                    <td th:text="${book.getAllSubjects()}"></td>
+                    <td th:text="${book.description}"></td>
+                    <td th:text="${book.noOfCopies}"></td>
+                    <td >
+                        <form th:action="${'delete/' + book.title}">
+                            <button class="buttons" type="submit">Delete</button>
+                        </form>
+                        <form th:action="${'details/' + book.title}">
+                            <button class="buttons" type="submit">Details</button>
+                        </form>
+                        <form th:action="${'update/' + book.title}">
+                            <button class="buttons" type="submit">Update</button>
+                        </form>
+                    </td>
+                </tr>
+                </form>
+
+                <form th:action="${'search'}" method="post">
+                    <h3 th:text="${noBook}"></h3>
+                    <tr th:each="book : ${searchBooks}">
+                        <td th:text="${book.title}"></td>
+                        <td th:text="${book.author.getName()}"></td>
+                        <td th:text="${book.getAllSubjects()}"></td>
+                        <td th:text="${book.description}"></td>
+                        <td th:text="${book.noOfCopies}"></td>
+                        <td>
+                            <form th:action="${'delete/' + book.title}">
+                                <button class="buttons" type="submit">Delete</button>
+                            </form>
+                            <form th:action="${'details/' + book.title}">
+                                <button class="buttons" type="submit">Details</button>
+                            </form>
+                            <form th:action="${'update/' + book.title}">
+                                <button class="buttons" type="submit">Update</button>
+                            </form>
+                        </td>
+                    </tr>
+                </form>
+            </tbody>
+        </table>
+</body>
+</html>

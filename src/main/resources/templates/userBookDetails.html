@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Book details</title>
+    <link rel="stylesheet" type="text/css" href="/userBooksDetails.css">
+
+</head>
+<body>
+<h1 th:text="${title}"></h1>
+<br><br><br><br>
+<h2 th:text="${author}"></h2>
+<h2 th:text="${subject}"></h2>
+<h2 th:text="${description}"></h2>
+<h2 th:text="${copies}"></h2>
+
+<br>
+
+<br>
+<table align="center">
+    <col width="150">
+    <col width="150">
+    <col width="250">
+    <col width="50">
+    <col width="50">
+    <col width="50">
+    <tr>
+        <th>Inventory no</th>
+        <th>Status</th>
+        <th>Edition</th>
+        <th>No of pages</th>
+        <th>Price</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="bookItem : ${userBookItems}">
+        <td th:text="${bookItem.inventoryNo}"></td>
+        <td th:text="${bookItem.status}"></td>
+        <td th:text="${bookItem.edition}"></td>
+        <td th:text="${bookItem.noOfPages}"></td>
+        <td th:text="${bookItem.price}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

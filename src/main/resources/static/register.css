@@ -1,0 +1,83 @@
+body{
+    background-image: url("registerPageBackground.jpg");
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    color: #444;
+}
+
+h1{
+    text-align: center;
+    color: 	#DB7093;
+    font-size: 36px;
+    font-family: "Franklin Gothic Medium", Helvetica, sans-serif;
+}
+
+h2{
+    text-align: center;
+    color: 	#DB7093;
+    font-size: 24px;
+    font-family: "Franklin Gothic Medium", Helvetica, sans-serif;
+}
+
+h3{
+    text-align: center;
+    color: 	#DB7093;
+    font-size: 24px;
+    font-family: "Franklin Gothic Medium", Helvetica, sans-serif;
+}
+
+#container {
+    position: fixed;
+    width: 600px;
+    height: 600px;
+    top: 40%;
+    left: 55%;
+    margin-top: -140px;
+    margin-left: -170px;
+}
+
+label {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 20px;
+    font-weight: bold
+    color: #333;
+    height: 20px;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: left;
+    clear: both;
+    float:left;
+    margin-right:15px;
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+select {
+    width: 290px;
+    height: 35px;
+    border: 1px solid #000;
+    margin-top: 10px;
+    float: left;
+}
+
+.register {
+    position: fixed;
+    font-size: 18px;
+    background: #FFDAB9;
+    top: 87%;
+    left: 65%;
+}
+
+input[type=button] {
+    position: fixed;
+    font-size: 18px;
+    background: #FFDAB9;
+    top: 79%;
+    left: 83%;
+}

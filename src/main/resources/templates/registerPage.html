@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="register.css">
+</head>
+<body>
+<div id="container">
+    <form action="registerPage" method="post">
+        <label for="firstName">First name(*) :</label>
+        <input type="text" id="firstName" placeholder="first name" name="firstName">
+
+        <label for="lastName">Last name(*) :</label>
+        <input type="text" id="lastName" placeholder="last name" name="lastName">
+
+        <label for="gender">Gender :</label>
+        <select id="gender" name="gender">
+            <option value="fem">Feminin</option>
+            <option value="masc">Masculin</option>
+        </select>
+
+        <label for="email">Email(*) :</label>
+        <input type="email" id="email" placeholder="email" name="email">
+
+        <label for="phone">Phone(*) :</label>
+        <input type="text" id="phone" placeholder="phone" name="phone">
+
+        <label for="username">Username(*) :</label>
+        <input type="text" id="username" placeholder="username" name="username">
+
+        <label for="password">Password(*) :</label>
+        <input type="password" id="password" placeholder="password" name="password">
+
+        <label for="confirmPassword">Confirm password(*) :</label>
+        <input type="password" id="confirmPassword" placeholder="Confirm password" name="confirmPassword">
+
+        <label for="user">User type(*) :</label>
+        <input type="text" id="user" placeholder="User type" name="type">
+
+        <!--<button type="submit" name="action" value="register">Register now</button>
+        <button type="button" name="action" value="userType">User number</button>-->
+
+        <button class="register">Register now</button>
+        <input type="button" value="User number">
+    </form>
+
+</div>
+
+<h1>Create a new account</h1>
+<h2 th:text="${userExists}"></h2>
+<h3 th:text="${passwords}"></h3>
+</body>
+</html>
